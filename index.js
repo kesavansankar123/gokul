@@ -28,7 +28,7 @@ app.use(express.json());
 loginDetails();
 
 app.get('/', (req, res) => {
-    res.send('Hello, World!....');
+    res.send('Hello, World!....?');
 });
 
 app.use('/user',router)
@@ -38,3 +38,16 @@ app.use('/user',router)
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
+
+
+  // "headers": [
+    //   {
+    //     "source": "/api/(.*)",
+    //     "headers": [
+    //       { "key": "Access-Control-Allow-Origin", "value": "*" },
+    //       { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" }
+    //     ]
+    //   }
+    // ]
